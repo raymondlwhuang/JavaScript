@@ -166,18 +166,5 @@ myDemo.prototype.create = function(){
 }
 const myDemo1 = new myDemo('widget-needed','widget-container','required-widget');
 myDemo1.create();
- fetch("http://data.fixer.io/api/latest?access_key=2b81c7684c1d1d43f49d4561e04c3a76")
-     .then(function(response) {
- 		console.log('t1');
-         if (!response.ok) {
-             throw Error(response.statusText);
- 		}
- 		console.log('t2');
-         return response.json();
-     }).then(function(data) {
- 		console.log('t3');
-         console.log(data)
-     }).catch(function(error) {
-         console.log(error);
- 	});
+
 
